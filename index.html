@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+  <div id="header">Find A Movie!</div>
+
+
+  <input type="text" id="titleInput" placeholder="Movie Title" required>
+
+  <input type="number" min="1900" max="2016" id="yearOf" placeholder="Year">
+  <select id="typeOf">
+    <option value="movie">Movie</option>
+    <option value="series">Series</option>
+    <option value="episode">Episode</option>
+  </select>
+  <button id="getMovie">Get Movie</button>
+
+
+  <div id="templateContainer">
+    <div class="sections" id="title"></div>
+    <!-- <div class="sections" id="director"></div> -->
+    <!-- <div class="sections" id="plot"></div> -->
+    <div class="sections" id="poster"></div>
+    <div class="sections" id="year"></div>
+    <div class="sections" id="type"></div>
+    <div id="siteID"></div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
