@@ -3,38 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Movies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 	
-  <div id="header">Find A Movie!</div>
+
+  <div id="header">Popcorn Time!</div>
+  <div id="direction">Search for any movie below!</div>
 
 
-  <input type="text" id="titleInput" placeholder="Movie Title" required>
+  <div id="inputContainer">
+    <input type="text" id="titleInput" placeholder="Movie Title" required>
 
-  <input type="number" min="1900" max="2016" id="yearOf" placeholder="Year">
-  <select id="typeOf">
-    <option value="movie">Movie</option>
-    <option value="series">Series</option>
-    <option value="episode">Episode</option>
-  </select>
-  <button id="getMovie">Get Movie</button>
+    <input type="number" min="1900" max="2016" id="yearOf" placeholder="Year">
+    <select id="typeOf">
+      <option value="movie">Movie</option>
+      <option value="series">Series</option>
+      <option value="episode">Episode</option>
+    </select>
+    <button id="getMovie">Get Movie</button>
+  </div>
+  
+  <br>
+  <br>
 
+  <div id="popcorn"></div>
 
   <div id="templateContainer">
     <div class="sections" id="title"></div>
-    <!-- <div class="sections" id="director"></div> -->
-    <!-- <div class="sections" id="plot"></div> -->
-    <div class="sections" id="poster"></div>
+<div id="posterOutside">
+    <div id="posterBox"><img class="sections" id="poster"></img></div></div>
+    <br>
     <div class="sections" id="year"></div>
     <div class="sections" id="type"></div>
     <div id="siteID"></div>
 
   </div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="main.js"></script>
 
